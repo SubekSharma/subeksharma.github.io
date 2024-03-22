@@ -29,7 +29,7 @@
     <nav
       class="fixed z-50 top-0 bg-[#f4f1e8] border-b-2 mb-2 fixed right-0 left-0 z-50 top-0"
     >
-      <div id="horizontalMenu" class="sm:flex-row py-4 float-right px-2">
+      <div id="horizontalMenu" class="py-4 float-right px-2">
         <img
           id="menuBtn"
           src="assets/icons/menu.svg"
@@ -38,26 +38,28 @@
           class="ml-auto sm:hidden hover:cursor-pointer"
         />
 
-        <ul class="hidden md:flex gap-8 ml-auto">
+        <ul class="hidden sm:flex flex align-center gap-8 ml-auto">
           <li
             class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
           >
-            <a class="" href="#home" title="Home">Home</a>
+            <a href="#home" title="Home" class="font-semibold">Home</a>
           </li>
           <li
             class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
           >
-            <a class="" href="#about" title="About">About</a>
+            <a href="#about" title="About" class="font-semibold">About</a>
           </li>
           <li
             class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
           >
-            <a class="" href="#projects" title="Projects">Projects</a>
+            <a href="#projects" title="Projects" class="font-semibold"
+              >Projects</a
+            >
           </li>
           <li
             class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
           >
-            <a class="" href="#contact" title="Contact">Contact</a>
+            <a href="#contact" title="Contact" class="font-semibold">Contact</a>
           </li>
         </ul>
       </div>
@@ -71,7 +73,7 @@
           src="assets/icons/close-circle.svg"
           width="24px"
           height="24px"
-          class="hidden ml-auto hover:cursor-pointer mt-4 mr-2"
+          class="sm:hidden ml-auto hover:cursor-pointer mt-4 mr-2"
         />
         <ul class="flex flex-col gap-4 p-4">
           <li
@@ -283,6 +285,120 @@
           alt="Subek Sharma"
           class="w-2/3 mx-auto"
         />
+      </div>
+    </section>
+
+    <section
+      id="projects"
+      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8"
+    >
+      <h1
+        class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
+      >
+        My Projects
+      </h1>
+      <ul
+        id="listOfProjects"
+        class="gap-16 grid grid-cols-1 sm:grid-cols-2 justify-between items-center"
+      >
+        <!-- rendered by script -->
+        <script src="assets/js/projects.js" type="module"></script>
+      </ul>
+    </section>
+
+    <section
+      id="contact"
+      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8"
+    >
+      <h1
+        class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
+      >
+        Certifications
+      </h1>
+
+      <div class="flex flex-col gap-2">
+        <ul class="list-disc">
+          <a
+            href="https://www.credly.com/users/subek-sharma/badges"
+            class="font-semibold underline underline-offset-2"
+            >MACHINE Learning Specialization</a
+          >
+
+          <li class="ml-4">
+            Supervised Machine Learning: Regression and Classification
+          </li>
+          <li class="ml-4">Advanced Learning Algorithms</li>
+          <li class="ml-4">
+            Unsupervised Learning Recommenders Reinforcement Learning
+          </li>
+        </ul>
+        <ul class="list-disc">
+          <a
+            href="https://www.credly.com/users/subek-sharma/badges"
+            class="font-semibold underline underline-offset-2"
+            >Deep Learning Specialization</a
+          >
+
+          <li class="ml-4">Neural Networks and Deep Learning</li>
+          <li class="ml-4">
+            Improving Deep Neural Networks: Hyperparameter Tuning,
+            Regularization and Optimization
+          </li>
+          <li class="ml-4">Structuring Machine Learning Projects</li>
+          <li class="ml-4">Convolutional Neural Networks</li>
+          <li class="ml-4">Sequence Models</li>
+        </ul>
+
+        <ul>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/CZZAJXFNZZS4"
+            class="font-semibold underline underline-offset-2"
+          >
+            Introduction to TensorFlow for Artificial Intelligence, Machine
+            Learning, and Deep Learning
+          </a>
+        </ul>
+
+        <ul>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/G5HFJ4W6LR8D"
+            class="font-semibold underline underline-offset-2"
+            >Convolutional Neural Networks in TensorFlow</a
+          >
+        </ul>
+
+        <ul>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/G5HFJ4W6LR8D"
+            class="font-semibold underline underline-offset-2"
+            >Natural Language Processing in TensorFlow</a
+          >
+        </ul>
+
+        <ul>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/G5HFJ4W6LR8D"
+            class="font-semibold underline underline-offset-2"
+            >Natural Language Processing with Classification and Vector
+            Spaces</a
+          >
+        </ul>
+
+        <ul>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/LML28R3QMMXZ"
+            class="font-semibold underline underline-offset-2"
+            >Aerial Image Segmentation with PyTorch</a
+          >
+        </ul>
+
+        <ul>
+          <a
+            href="https://www.coursera.org/account/accomplishments/certificate/CE9E9AMP6FA5"
+            class="font-semibold underline underline-offset-2"
+            >Deep Learning with PyTorch : GradCAM</a
+          >
+        </ul>
       </div>
     </section>
 
