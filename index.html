@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="I am an undergraduate student researcher pursuing a Computer Engineering degree at Paschimanchal Campus, Lamachaur, Pokhara, affiliated with Tribhuvan University"
+    />
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Subek Sharma</title>
+  </head>
+
+  <body class="relative">
+    <nav
+      class="fixed z-50 top-0 bg-[#f4f1e8] border-b-2 mb-2 fixed right-0 left-0 z-50 top-0"
+    >
+      <div id="horizontalMenu" class="sm:flex-row py-4 float-right px-2">
+        <img
+          id="menuBtn"
+          src="assets/icons/menu.svg"
+          width="24px"
+          height="24px"
+          class="ml-auto sm:hidden hover:cursor-pointer"
+        />
+
+        <ul class="hidden md:flex gap-8 ml-auto">
+          <li
+            class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
+          >
+            <a class="" href="#home" title="Home">Home</a>
+          </li>
+          <li
+            class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
+          >
+            <a class="" href="#about" title="About">About</a>
+          </li>
+          <li
+            class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
+          >
+            <a class="" href="#projects" title="Projects">Projects</a>
+          </li>
+          <li
+            class="border-b-2 border-b-transparent hover:border-b-gray-700 transition-border ease-in-out duration-300"
+          >
+            <a class="" href="#contact" title="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        id="verticalMenu"
+        class="hidden sm:hidden fixed top-0 left-20 right-0 h-full bg-white z-50"
+      >
+        <img
+          id="closeMenuBtn"
+          src="assets/icons/close-circle.svg"
+          width="24px"
+          height="24px"
+          class="hidden ml-auto hover:cursor-pointer mt-4 mr-2"
+        />
+        <ul class="flex flex-col gap-4 p-4">
+          <li
+            class="border-b-2 text-gray-600 hover:text-gray-800 hover:border-b-black transition-color duration-300"
+          >
+            <a class="" href="#" title="Home">Home</a>
+          </li>
+          <li
+            class="border-b-2 text-gray-600 hover:text-gray-800 hover:border-b-black transition-color duration-300"
+          >
+            <a class="" href="#about" title="About">About</a>
+          </li>
+          <li
+            class="border-b-2 text-gray-600 hover:text-gray-800 hover:border-b-black transition-color duration-300"
+          >
+            <a class="" href="#projects" title="Projects">Projects</a>
+          </li>
+          <li
+            class="border-b-2 text-gray-600 hover:text-gray-800 hover:border-b-black transition-color duration-300"
+          >
+            <a class="" href="#contact" title="Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="flex flex-col justify-center items-center mt-16 py-36 md:py-48 lg:py-56 px-2 max-w-5xl mx-auto"
+    >
+      <h1
+        class="text-4xl sm:text-6xl md:text-[96px] lg:text-[128px] font-[500] text-center"
+      >
+        <span class="italic text-serif">Hello,</span>
+        <span class="text-indigo-600 text-serif">I am Subek!</span>
+      </h1>
+
+      <p
+        class="text-center text-xs md:text-sm lg:text-2xl max-w-xl my-4 md:my-8"
+      >
+        "Empowering progress through the perfect blend of human touch and
+        technological brilliance."
+      </p>
+    </section>
+
+    <section
+      id="about"
+      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8 gap-16 flex flex-col sm:flex-row justify-between items-center"
+    >
+      <div class="w-1/2">
+        <h1
+          class="text-indigo-600 text-3xl md:text-6xl text-center md:text-left italic my-8 text-serif"
+        >
+          <span class="relative text-serif"
+            >About
+            <!--
+
+            <img
+            src="assets/images/purple_circle.svg"
+            alt="Purple Circle"
+            class="absolute left-0 top-0 sm:-left-2 sm:-top-10 w-40 h-40"
+            />
+          -->
+          </span>
+          Subek Sharma
+        </h1>
+        <p class="text-justify text-xs sm:text-sm md:text-lg my-4">
+          I am an undergraduate student researcher pursuing a Computer
+          Engineering degree at Paschimanchal Campus, Lamachaur, Pokhara,
+          affiliated with Tribhuvan University. My academic interests span the
+          fields of Deep Learning, Computer Vision and their use in
+          interdisciplinary fields.
+        </p>
+      </div>
+
+      <div class="w-1/2">
+        <img
+          src="assets/images/subek_sharma.jpg"
+          alt="Subek Sharma"
+          class="rounded-t-full w-full"
+        />
+      </div>
+    </section>
+
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/persona.js" type="module"></script>
+    <script src="assets/js/site.js" type="module"></script>
+  </body>
+</html>
