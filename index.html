@@ -105,14 +105,14 @@
       class="flex flex-col justify-center items-center mt-16 py-36 md:py-48 lg:py-56 px-2 max-w-5xl mx-auto"
     >
       <h1
-        class="text-4xl sm:text-6xl md:text-[96px] lg:text-[128px] font-[500] text-center"
+        class="text-[64px] sm:text-[84px] md:text-[96px] lg:text-[128px] font-[500] text-center"
       >
         <span class="italic text-serif">Hello,</span>
         <span class="text-indigo-600 text-serif">I am Subek!</span>
       </h1>
 
       <p
-        class="text-center text-xs md:text-sm lg:text-2xl max-w-xl my-4 md:my-8"
+        class="text-center text-base md:text-sm lg:text-2xl max-w-xl my-4 md:my-8"
       >
         "Empowering progress through the perfect blend of human touch and
         technological brilliance."
@@ -140,7 +140,7 @@
           </span>
           Subek Sharma
         </h1>
-        <p class="text-justify text-xs sm:text-sm md:text-lg my-4">
+        <p class="text-justify text-sm sm:text-base md:text-lg my-4">
           I am an undergraduate student researcher pursuing a Computer
           Engineering degree at Paschimanchal Campus, Lamachaur, Pokhara,
           affiliated with Tribhuvan University. My academic interests span the
@@ -158,7 +158,10 @@
       </div>
     </section>
 
-    <section id="education" class="py-24 px-2 sm:px-8 container max-w-5xl">
+    <section
+      id="education"
+      class="py-24 px-2 sm:px-8 container mx-auto max-w-5xl"
+    >
       <h1
         class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
       >
@@ -254,7 +257,7 @@
         class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center"
       >
         <div>
-          <p class="text-justify text-xs sm:text-sm md:text-lg my-4">
+          <p class="text-justify text-sm sm:text-base md:text-lg my-4">
             I was involved in data collection at Manipal College of Medical
             Sciences, Pokhara for clinical research, where each interaction with
             patients and their families is a chance to craft meaningful
@@ -269,7 +272,7 @@
           <img
             src="assets/images/data_collection_photo_1.png"
             alt="Subek Sharma"
-            class="w-2/3 mx-auto"
+            class="w-2/3 mx-auto rounded-xl aspect-square object-cover"
           />
         </div>
       </div>
@@ -278,12 +281,12 @@
         <img
           src="assets/images/data_collection_photo_2.png"
           alt="Subek Sharma"
-          class="w-2/3 mx-auto"
+          class="w-2/3 mx-auto rounded-xl aspect-square object-cover"
         />
         <img
           src="assets/images/data_collection_photo_3.png"
           alt="Subek Sharma"
-          class="w-2/3 mx-auto"
+          class="w-2/3 mx-auto rounded-xl aspect-square object-cover"
         />
       </div>
     </section>
@@ -308,7 +311,7 @@
 
     <section
       id="contact"
-      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8"
+      class="container max-w-5xl my-24 mx-auto px-2 sm:px-8"
     >
       <h1
         class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
@@ -324,11 +327,13 @@
             >MACHINE Learning Specialization</a
           >
 
-          <li class="ml-4">
+          <li class="ml-4 text-sm text-gray-700">
             Supervised Machine Learning: Regression and Classification
           </li>
-          <li class="ml-4">Advanced Learning Algorithms</li>
-          <li class="ml-4">
+          <li class="ml-4 text-sm text-gray-700">
+            Advanced Learning Algorithms
+          </li>
+          <li class="ml-4 text-sm text-gray-700">
             Unsupervised Learning Recommenders Reinforcement Learning
           </li>
         </ul>
@@ -339,14 +344,20 @@
             >Deep Learning Specialization</a
           >
 
-          <li class="ml-4">Neural Networks and Deep Learning</li>
-          <li class="ml-4">
+          <li class="ml-4 text-sm text-gray-700">
+            Neural Networks and Deep Learning
+          </li>
+          <li class="ml-4 text-sm text-gray-700">
             Improving Deep Neural Networks: Hyperparameter Tuning,
             Regularization and Optimization
           </li>
-          <li class="ml-4">Structuring Machine Learning Projects</li>
-          <li class="ml-4">Convolutional Neural Networks</li>
-          <li class="ml-4">Sequence Models</li>
+          <li class="ml-4 text-sm text-gray-700">
+            Structuring Machine Learning Projects
+          </li>
+          <li class="ml-4 text-sm text-gray-700">
+            Convolutional Neural Networks
+          </li>
+          <li class="ml-4 text-sm text-gray-700">Sequence Models</li>
         </ul>
 
         <ul>
@@ -401,6 +412,153 @@
         </ul>
       </div>
     </section>
+
+    <footer class="bg-[#5e17eb] py-16">
+      <div
+        class="max-w-5xl mx-auto px-2 sm:px-8 grid grid-cols-1 sm:grid-cols-2 gap-4"
+      >
+        <div class="flex flex-col">
+          <p class="text-6xl text-white text-serif">
+            Reach out if you want to connect.
+          </p>
+
+          <hr class="border border-white my-8" />
+
+          <p class="uppercase tracking-wide text-white">Lets connect:</p>
+
+          <div class="flex items-center gap-4 wrap my-4">
+            <a
+              href="https://www.researchgate.net/profile/Subek-Sharma"
+              title="ResearchGate"
+              ><div
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/researchgate.svg"
+                  alt="ResearchGate"
+                  class="w-5 h-5 aspect-square"
+                /></div
+            ></a>
+
+            <a
+              href="https://www.linkedin.com/in/subek-sharma/"
+              title="LinkedIn"
+            >
+              <div
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  class="w-5 h-5 aspect-square"
+                />
+              </div>
+            </a>
+
+            <a href="https://github.com/SubekSharma" title="GitHub">
+              <div
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/github.svg"
+                  alt="GitHub"
+                  class="w-5 h-5 aspect-square"
+                />
+              </div>
+            </a>
+
+            <a href="https://twitter.com/tsubek" title="Twitter">
+              <div
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/twitter.svg"
+                  alt="Twitter"
+                  class="w-5 h-5 aspect-square"
+                />
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/subek_kashyap_adhikary/"
+              title="Instagram"
+            >
+              <div
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/instagram.svg"
+                  alt="Instagram"
+                  class="w-5 h-5 aspect-square"
+                />
+              </div>
+            </a>
+
+            <a href="https://blog.subeksharma.com.np/" title="Blog">
+              <div
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/blog.svg"
+                  alt="Blog"
+                  class="w-6 h-6 aspect-square"
+                />
+              </div>
+            </a>
+
+            <a href="https://subek-sharma.tiiny.site/" title="CV">
+              <p
+                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+              >
+                <img
+                  src="assets/icons/cv.svg"
+                  alt="CV"
+                  class="w-6 h-6 aspect-square"
+                />
+              </p>
+            </a>
+          </div>
+        </div>
+
+        <div class="my-2 grid grid-cols-1 gap-4">
+          <div class="mr-2 mb-2 flex items-center gap-4">
+            <div
+              class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center border-2"
+            >
+              <img src="assets/icons/phone.svg" alt="Phone" class="w-8 h-8" />
+            </div>
+            <div class="">
+              <p class="text-white uppercase text-xs font-semibold">Phone</p>
+              <p>
+                <a
+                  href="tel:+9779845625240"
+                  class="text-white text-serif text-lg font-[300]"
+                  >+977 9845625240</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="mr-2 mb-2 flex items-center gap-4">
+            <div
+              class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
+            >
+              <img src="assets/icons/mail.svg" alt="Email" class="w-8 h-8" />
+            </div>
+            <div class="">
+              <p class="text-white uppercase text-xs font-semibold">Email</p>
+              <p class="">
+                <a
+                  href="mailto:subeksharma11@gmail.com"
+                  class="text-white text-serif text-lg font-[300]"
+                  >subeksharma11@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/persona.js" type="module"></script>

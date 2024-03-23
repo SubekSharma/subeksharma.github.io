@@ -5,6 +5,10 @@
     font-family: "Inter", sans-serif;
 }
 
+/* :root {
+    --purple: "#5e17eb";
+} */
+
 html {
     scroll-behavior: smooth;
 }
