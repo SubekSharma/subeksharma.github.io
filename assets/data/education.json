@@ -1,0 +1,25 @@
+{
+  "education": [
+    {
+      "degree": "Bachelors of Computer Engineering",
+      "institution": "Tribhuvan University, Institute of Engineering, Paschimanchal Campus, Pokhara",
+      "year": "Nov 2019 - Apr 2024",
+      "iconUrl": "assets/images/university.svg",
+      "iconAlt": "University"
+    },
+    {
+      "degree": "High School",
+      "institution": "Valmiki Siksha Sadan, Chitwan",
+      "year": "2016 - 2018",
+      "iconUrl": "assets/images/high_school.svg",
+      "iconAlt": "High School"
+    },
+    {
+      "degree": "Secondary Education Examination",
+      "institution": "Sainik Awasiya Mahavidyalaya, Chitwan",
+      "year": "2012 - 2016",
+      "iconUrl": "assets/images/school.svg",
+      "iconAlt": "School"
+    }
+  ]
+}

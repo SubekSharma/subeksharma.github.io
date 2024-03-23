@@ -1,29 +1,8 @@
-const projectsList = document.getElementById("listOfProjects")
+import projectsData from "../data/projects.json" assert { type: "json" }
 
-const projects = [
-  {
-    title: "Pneumonia Detection",
-    imgSrc: "assets/images/pneumonia_detection.jpg",
-    link: "https://subek-pneumonia.hf.space/",
-  },
-  {
-    title: "Brain Tumor Segmentation",
-    imgSrc: "assets/images/brain_tumor_segmentation.jpg",
-    link: "https://subek-brain-tumor.hf.space/",
-  },
-  {
-    title: "Face Landmarks Detection",
-    imgSrc: "assets/images/face_landmarks_detection.png",
-    link: "https://github.com/SubekSharma/Face_Landmarks_Detection",
-  },
-  {
-    title: "Landmarks Recognition System",
-    imgSrc: "assets/images/landmark_recognition.jpg",
-    link: "https://github.com/Gantavya-app",
-  },
-]
+const projectsListElement = document.getElementById("listOfProjects")
 
-projects.forEach((project) => {
+projectsData.projects.forEach((project) => {
   const li = document.createElement("li")
   const imgLink = document.createElement("a")
   const titleLink = document.createElement("a")
@@ -61,5 +40,5 @@ projects.forEach((project) => {
   li.appendChild(titleLink)
   titleLink.appendChild(title)
 
-  projectsList.appendChild(li)
+  projectsListElement.appendChild(li)
 })
