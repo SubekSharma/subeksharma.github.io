@@ -1,25 +1,17 @@
-import data from "../data/education.json" assert { type: "json" }
-
-const { education } = data
-
 const bgIconAlt = "Purple Circle"
 const bgIconUrl = "assets/images/purple_circle_filled.svg"
 
-const educationListEl = document.getElementById("educationList")
+function fetchEducationData() {
+  return fetch("assets/data/education.json")
+    .then((res) => res.json())
+    .then((data) => data.education)
+}
 
-education.map((item) => {
-  //   <h3 class="text-2xl text-serif text-center">
-  //   ${item.degree}
-  //  </h3>
+function renderEducation(education) {
+  const educationListEl = document.getElementById("educationList")
 
-  //  <div>
-  //  <hr class="border rounded-full w-full border-indigo-500"/>
-  //  <p class="font-semibold text-sm text-center">
-  //  ${item.institution}
-  //  </p>
-  //
-  //  </div>
-  const educationItem = `
+  education.map((item) => {
+    const educationItem = `
  <div class="flex flex-col h-[400px] w-full  py-4">
     <div class="relative flex items-center justify-center">
       <img
@@ -52,12 +44,13 @@ education.map((item) => {
  </div> 
  `
 
-  const containerEl = document.createElement("div")
-  containerEl.className = ""
+    const containerEl = document.createElement("div")
+    containerEl.className = ""
 
-  containerEl.innerHTML = educationItem
+    containerEl.innerHTML = educationItem
 
-  educationListEl.appendChild(containerEl)
-})
+    educationListEl.appendChild(containerEl)
+  })
+}
 
-console.log(education, educationListEl)
+fetchEducationData().then(renderEducation)

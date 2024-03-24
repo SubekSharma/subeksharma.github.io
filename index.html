@@ -22,7 +22,7 @@
 
     <link rel="stylesheet" href="assets/css/global.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title id="title">Subek Sharma</title>
+    <title id="title" renderitem="fullName">Subek Sharma</title>
   </head>
 
   <body class="relative">
@@ -102,13 +102,16 @@
 
     <section
       id="home"
-      class="flex flex-col justify-center items-center mt-16 py-36 md:py-48 lg:py-56 px-2 max-w-5xl mx-auto"
+      class="flex flex-col justify-center items-center mt-16 py-36 md:py-48 lg:pb-56 lg:mt-4 px-2 max-w-5xl mx-auto"
     >
       <h1
         class="text-[64px] sm:text-[84px] md:text-[96px] lg:text-[128px] font-[500] text-center"
       >
         <span class="italic text-serif">Hello,</span>
-        <span class="text-indigo-600 text-serif">I am Subek!</span>
+        <span class="text-indigo-600 text-serif"
+          >I am
+          <span renderitem="firstName" class="text-serif">Subek</span>!</span
+        >
       </h1>
 
       <p
@@ -137,10 +140,15 @@
             />
           -->
           </span>
-          Subek Sharma
+          <span renderitem="fullName" class="text-serif">
+            <!-- rendered by script -->
+          </span>
         </h1>
-        <p class="text-justify text-sm sm:text-base md:text-lg my-4">
-          I am a final semester undergraduate student pursuing a degree in Computer Engineering at Paschimanchal Campus, Lamachaur, Pokhara, Nepal, affiliated with Tribhuvan University. My academic interests lie in the realms of Artificial Intelligence (A.I.), Deep Learning, and Computer Vision, along with their diverse applications across interdisciplinary fields.
+        <p
+          class="text-justify text-sm sm:text-base md:text-lg my-4"
+          renderitem="about"
+        >
+          <!-- rendered by script -->
         </p>
       </div>
 
@@ -167,7 +175,6 @@
         class="mt-4 grid grid-cols-1 px-6 md:px-2 md:grid-cols-3 gap-4"
       >
         <!-- rendered by script -->
-        <script src="assets/js/education.js" type="module"></script>
       </div>
     </section>
 
@@ -184,8 +191,11 @@
         class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center"
       >
         <div>
-          <p class="text-justify text-sm sm:text-base md:text-lg my-4">
-            I participated in a clinical research project funded by the University Grants Commission (UGC), collaborating with hospitals to collect data. This experience not only enhanced my research skills but also allowed me to utilize and improve my soft skills, particularly communication and interpersonal skills. Engaging with patients and their relatives to discuss our research and obtain consent for data collection further refined my abilities in these areas.
+          <p
+            renderitem="researchSectionText"
+            class="text-justify text-sm sm:text-base md:text-lg my-4"
+          >
+            <!-- rendered by script -->
           </p>
         </div>
         <div>
@@ -225,7 +235,6 @@
         class="gap-16 grid grid-cols-1 sm:grid-cols-2 justify-between items-center"
       >
         <!-- rendered by script -->
-        <script src="assets/js/projects.js" type="module"></script>
       </ul>
     </section>
 
@@ -346,7 +355,7 @@
 
           <p class="uppercase tracking-wide text-white">Lets connect:</p>
 
-          <div class="flex items-center gap-4 wrap my-4">
+          <div class="flex items-center gap-4 flex-wrap my-4">
             <a
               href="https://www.researchgate.net/profile/Subek-Sharma"
               title="ResearchGate"
@@ -440,7 +449,7 @@
           </div>
         </div>
 
-        <div class="my-2 grid grid-cols-1 gap-4">
+        <div class="my-2 md:ml-auto grid grid-cols-1 gap-4">
           <div class="mr-2 mb-2 flex items-center gap-4">
             <div
               class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center border-2"
@@ -449,13 +458,14 @@
             </div>
             <div class="">
               <p class="text-white uppercase text-xs font-semibold">Phone</p>
-              <p>
-                <a
-                  href="tel:+9779845625240"
+              <a href="tel:+9779845625240">
+                <p
+                  renderitem="phone"
                   class="text-white text-serif text-lg font-[300]"
-                  >+977 9845625240</a
                 >
-              </p>
+                  <!-- rendered by script -->
+                </p>
+              </a>
             </div>
           </div>
 
@@ -467,13 +477,14 @@
             </div>
             <div class="">
               <p class="text-white uppercase text-xs font-semibold">Email</p>
-              <p class="">
-                <a
-                  href="mailto:subeksharma11@gmail.com"
+              <a href="mailto:subeksharma11@gmail.com">
+                <p
+                  renderitem="email"
                   class="text-white text-serif text-lg font-[300]"
-                  >subeksharma11@gmail.com</a
                 >
-              </p>
+                  <!-- rendered by script -->
+                </p>
+              </a>
             </div>
           </div>
         </div>
@@ -482,6 +493,7 @@
 
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/persona.js" type="module"></script>
-    <script src="assets/js/site.js" type="module"></script>
+    <script src="assets/js/education.js" type="module"></script>
+    <script src="assets/js/projects.js" type="module"></script>
   </body>
 </html>
