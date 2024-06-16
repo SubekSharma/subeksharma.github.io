@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- ... other head elements ... -->
     <title id="title" renderitem="fullName">Subek Sharma</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,84 +8,60 @@
     <script src="script.js" defer></script>
   </head>
   <body class="relative">
-    <!-- ... other body elements ... -->
-
-    <section id="hero" class="bg-indigo-600 text-white py-32">
-      <div class="container mx-auto px-6 sm:px-12 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6">Subek Sharma</h1>
-        <p class="text-lg md:text-2xl mb-6">Machine Learning Enthusiast | Data Scientist | Researcher</p>
-        <a href="#about" class="bg-white text-indigo-600 px-6 py-3 rounded-lg text-lg md:text-xl">Learn More</a>
-      </div>
-    </section>
-
-    <section id="about" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
-      <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">About Me</h1>
-      <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
-        <div>
-          <p class="text-justify text-sm sm:text-base md:text-lg my-4">
-            Hello! I'm Subek Sharma, a passionate machine learning enthusiast and data scientist. I specialize in developing and implementing deep learning models for various applications, including wildlife classification and object detection. With a strong background in computer science and a keen interest in research, I strive to push the boundaries of what's possible with technology.
-          </p>
-        </div>
-        <div>
-          <img src="assets/images/profile_photo.jpg" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
-        </div>
-      </div>
-    </section>
-
-    <section id="research" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
-      <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Research</h1>
-      <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
-        <div>
-          <p renderitem="researchSectionText" class="text-justify text-sm sm:text-base md:text-lg my-4">
-            <!-- rendered by script -->
-          </p>
-        </div>
-        <div>
-          <img src="assets/images/data_collection_photo_1.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
-        </div>
-      </div>
-      <div class="mt-8 gap-8 grid grid-cols-1 sm:grid-cols-2">
-        <img src="assets/images/data_collection_photo_2.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
-        <img src="assets/images/data_collection_photo_3.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
-      </div>
-    </section>
-
-    <section id="publications" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
-      <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Publications</h1>
-      <div class="mt-4 px-6 md:px-2">
-        <ul class="list-disc">
-          <li class="text-lg text-gray-700">
-            Subek Sharma, Sisir Dhakal, "Evaluating Transfer Learning in Deep Learning Models for Classification on a Custom Wildlife Dataset: Can YOLOv8 Surpass Other Architectures?", (Submitted to arXiv).
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="contact" class="bg-gray-100 py-24">
-      <div class="container max-w-5xl mx-auto px-2 sm:px-8">
-        <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Contact</h1>
-        <form action="https://formspree.io/YOUREMAIL" method="POST" class="w-full max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
-          <div class="mb-4">
-            <label for="name" class="block text-gray-700">Name</label>
-            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required>
+    <div class="bg-gray-50">
+      <section class="bg-black relative" style="height: 500px;">
+        <div class="absolute w-full h-full z-20">
+          <div class="container mx-auto max-w-5xl px-4 sm:px-8 h-full flex items-center">
+            <div>
+              <p class="text-white font-bold text-3xl sm:text-5xl leading-none mb-6">Subek Sharma</p>
+              <div class="h-1 w-20 bg-indigo-600"></div>
+              <p class="text-gray-200 font-light text-xl sm:text-2xl my-4 tracking-wide">Passionate Machine Learning Engineer with a love for wildlife conservation and technology.</p>
+            </div>
           </div>
-          <div class="mb-4">
-            <label for="email" class="block text-gray-700">Email</label>
-            <input type="email" id="email" name="_replyto" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required>
+        </div>
+        <img src="assets/images/hero_background.jpg" alt="Background image" class="absolute w-full h-full top-0 left-0 object-cover z-10 opacity-50">
+      </section>
+      <section id="about" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
+        <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">About Me</h1>
+        <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
+          <div>
+            <p renderitem="aboutSectionText" class="text-justify text-sm sm:text-base md:text-lg my-4">
+              <!-- rendered by script -->
+            </p>
           </div>
-          <div class="mb-4">
-            <label for="message" class="block text-gray-700">Message</label>
-            <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="5" required></textarea>
+          <div>
+            <img src="assets/images/profile_photo.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover">
           </div>
-          <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded-lg">Send</button>
-        </form>
-      </div>
-    </section>
+        </div>
+      </section>
+      <section id="research" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
+        <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Research</h1>
+        <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
+          <div>
+            <p renderitem="researchSectionText" class="text-justify text-sm sm:text-base md:text-lg my-4">
+              <!-- rendered by script -->
+            </p>
+          </div>
+          <div>
+            <img src="assets/images/data_collection_photo_1.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover">
+          </div>
+        </div>
+        <div class="mt-8 gap-8 grid grid-cols-1 sm:grid-cols-2">
+          <img src="assets/images/data_collection_photo_2.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover">
+          <img src="assets/images/data_collection_photo_3.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover">
+        </div>
+      </section>
 
-    <footer class="bg-indigo-600 text-white py-6 text-center">
-      <p>&copy; 2024 Subek Sharma. All rights reserved.</p>
-    </footer>
-
-    <!-- ... other body elements ... -->
+      <section id="publications" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
+        <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Publications</h1>
+        <div class="mt-4 px-6 md:px-2">
+          <ul class="list-disc">
+            <li class="text-lg text-gray-700">
+              Subek Sharma, Sisir Dhakal, "Evaluating Transfer Learning in Deep Learning Models for Classification on a Custom Wildlife Dataset: Can YOLOv8 Surpass Other Architectures?", (Submitted to arXiv).
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
