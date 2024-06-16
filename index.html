@@ -1,499 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="/" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="I am an undergraduate student researcher pursuing a Computer Engineering degree at Paschimanchal Campus, Lamachaur, Pokhara, affiliated with Tribhuvan University"
-    />
-    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ... other head elements ... -->
     <title id="title" renderitem="fullName">Subek Sharma</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
   </head>
-
   <body class="relative">
-    <nav
-      class="fixed z-50 top-0 bg-[#f4f1e8] border-b-2 border-b-gray-300 mb-2 fixed right-0 left-0 z-50 top-0"
-    >
-      <div id="horizontalMenu" class="py-4 float-right px-2">
-        <img
-          id="menuBtn"
-          src="assets/icons/menu.svg"
-          width="24px"
-          height="24px"
-          class="ml-auto sm:hidden hover:cursor-pointer"
-        />
+    <!-- ... other body elements ... -->
 
-        <ul class="hidden sm:flex flex align-center gap-8 ml-auto">
-          <li
-            class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition-color transition-border ease-in-out duration-300"
-          >
-            <a href="#home" title="Home" class="font-semibold">Home</a>
-          </li>
-          <li
-            class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition-color transition-border ease-in-out duration-300"
-          >
-            <a href="#about" title="About" class="font-semibold">About</a>
-          </li>
-          <li
-            class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition-color transition-border ease-in-out duration-300"
-          >
-            <a href="#projects" title="Projects" class="font-semibold"
-              >Projects</a
-            >
-          </li>
-          <li
-            class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition-color transition-border ease-in-out duration-300"
-          >
-            <a href="#contact" title="Contact" class="font-semibold">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div
-        id="verticalMenu"
-        class="hidden sm:hidden fixed top-0 left-20 right-0 h-full bg-white z-50"
-      >
-        <img
-          id="closeMenuBtn"
-          src="assets/icons/close-circle.svg"
-          width="24px"
-          height="24px"
-          class="sm:hidden ml-auto hover:cursor-pointer mt-4 mr-2"
-        />
-        <ul class="flex flex-col gap-4 p-4">
-          <li
-            class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition-color duration-300"
-          >
-            <a class="" href="#" title="Home">Home</a>
-          </li>
-          <li
-            class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition-color duration-300"
-          >
-            <a class="" href="#about" title="About">About</a>
-          </li>
-          <li
-            class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition-color duration-300"
-          >
-            <a class="" href="#projects" title="Projects">Projects</a>
-          </li>
-          <li
-            class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition-color duration-300"
-          >
-            <a class="" href="#contact" title="Contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <section
-      id="home"
-      class="flex flex-col justify-center items-center mt-16 py-36 md:py-48 lg:pb-56 lg:mt-4 px-2 max-w-5xl mx-auto"
-    >
-      <h1
-        class="text-[64px] sm:text-[84px] md:text-[96px] lg:text-[128px] font-[500] text-center"
-      >
-        <span class="italic text-serif">Hello,</span>
-        <span class="text-indigo-600 text-serif"
-          >I am
-          <span renderitem="firstName" class="text-serif">Subek</span>!</span
-        >
-      </h1>
-
-      <p
-        class="text-center text-base md:text-sm lg:text-2xl max-w-xl my-4 md:my-8"
-      >
-        "Bringing ideas to life, one pixel at a time."
-      </p>
-    </section>
-
-    <section
-      id="about"
-      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8 gap-16 flex flex-col sm:flex-row justify-between items-center"
-    >
-      <div class="sm:w-1/2">
-        <h1
-          class="text-indigo-600 text-3xl md:text-6xl text-center md:text-left italic my-8 text-serif"
-        >
-          <span class="relative text-serif"
-            >About
-            <!--
-
-            <img
-            src="assets/images/purple_circle.svg"
-            alt="Purple Circle"
-            class="absolute left-0 top-0 sm:-left-2 sm:-top-10 w-40 h-40"
-            />
-          -->
-          </span>
-          <span renderitem="fullName" class="text-serif">
-            <!-- rendered by script -->
-          </span>
-        </h1>
-        <p
-          class="text-justify text-sm sm:text-base md:text-lg my-4"
-          renderitem="about"
-        >
-          <!-- rendered by script -->
-        </p>
-      </div>
-
-      <div class="sm:w-1/3">
-        <img
-          src="assets/images/subek_sharma.jpg"
-          alt="Subek Sharma"
-          class="rounded-t-full w-full"
-        />
+    <section id="hero" class="bg-indigo-600 text-white py-32">
+      <div class="container mx-auto px-6 sm:px-12 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Subek Sharma</h1>
+        <p class="text-lg md:text-2xl mb-6">Machine Learning Enthusiast | Data Scientist | Researcher</p>
+        <a href="#about" class="bg-white text-indigo-600 px-6 py-3 rounded-lg text-lg md:text-xl">Learn More</a>
       </div>
     </section>
 
-    <section
-      id="education"
-      class="py-24 px-2 sm:px-8 container mx-auto max-w-5xl"
-    >
-      <h1
-        class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
-      >
-        Education
-      </h1>
-      <div
-        id="educationList"
-        class="mt-4 grid grid-cols-1 px-6 md:px-2 md:grid-cols-3 gap-4"
-      >
-        <!-- rendered by script -->
-      </div>
-    </section>
-
-    <section
-      id="research"
-      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8"
-    >
-      <h1
-        class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
-      >
-        Research
-      </h1>
-      <div
-        class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center"
-      >
+    <section id="about" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
+      <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">About Me</h1>
+      <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
         <div>
-          <p
-            renderitem="researchSectionText"
-            class="text-justify text-sm sm:text-base md:text-lg my-4"
-          >
+          <p class="text-justify text-sm sm:text-base md:text-lg my-4">
+            Hello! I'm Subek Sharma, a passionate machine learning enthusiast and data scientist. I specialize in developing and implementing deep learning models for various applications, including wildlife classification and object detection. With a strong background in computer science and a keen interest in research, I strive to push the boundaries of what's possible with technology.
+          </p>
+        </div>
+        <div>
+          <img src="assets/images/profile_photo.jpg" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
+      <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Research</h1>
+      <div class="gap-8 grid grid-cols-1 sm:grid-cols-2 justify-between items-center">
+        <div>
+          <p renderitem="researchSectionText" class="text-justify text-sm sm:text-base md:text-lg my-4">
             <!-- rendered by script -->
           </p>
         </div>
         <div>
-          <img
-            src="assets/images/data_collection_photo_1.png"
-            alt="Subek Sharma"
-            class="w-2/3 mx-auto rounded-xl aspect-square object-cover"
-          />
+          <img src="assets/images/data_collection_photo_1.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
         </div>
       </div>
-
       <div class="mt-8 gap-8 grid grid-cols-1 sm:grid-cols-2">
-        <img
-          src="assets/images/data_collection_photo_2.png"
-          alt="Subek Sharma"
-          class="w-2/3 mx-auto rounded-xl aspect-square object-cover"
-        />
-        <img
-          src="assets/images/data_collection_photo_3.png"
-          alt="Subek Sharma"
-          class="w-2/3 mx-auto rounded-xl aspect-square object-cover"
-        />
+        <img src="assets/images/data_collection_photo_2.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
+        <img src="assets/images/data_collection_photo_3.png" alt="Subek Sharma" class="w-2/3 mx-auto rounded-xl aspect-square object-cover" />
       </div>
     </section>
 
-    <section
-      id="projects"
-      class="container max-w-5xl py-24 mx-auto px-2 sm:px-8"
-    >
-      <h1
-        class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
-      >
-        My Projects
-      </h1>
-      <ul
-        id="listOfProjects"
-        class="gap-16 grid grid-cols-1 sm:grid-cols-2 justify-between items-center"
-      >
-        <!-- rendered by script -->
-      </ul>
-    </section>
-
-    <section
-      id="contact"
-      class="container max-w-5xl my-24 mx-auto px-2 sm:px-8"
-    >
-      <h1
-        class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif"
-      >
-        Certifications
-      </h1>
-
-      <div class="flex flex-col gap-2">
+    <section id="publications" class="container max-w-5xl py-24 mx-auto px-2 sm:px-8">
+      <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Publications</h1>
+      <div class="mt-4 px-6 md:px-2">
         <ul class="list-disc">
-          <a
-            href="https://www.coursera.org/account/accomplishments/specialization/9Z4N4R2DF32F"
-            class="font-semibold underline underline-offset-2"
-            >MACHINE Learning Specialization</a
-          >
-
-          <li class="ml-4 text-sm text-gray-700">
-            Supervised Machine Learning: Regression and Classification
+          <li class="text-lg text-gray-700">
+            Subek Sharma, Sisir Dhakal, "Evaluating Transfer Learning in Deep Learning Models for Classification on a Custom Wildlife Dataset: Can YOLOv8 Surpass Other Architectures?", (Submitted to arXiv).
           </li>
-          <li class="ml-4 text-sm text-gray-700">
-            Advanced Learning Algorithms
-          </li>
-          <li class="ml-4 text-sm text-gray-700">
-            Unsupervised Learning Recommenders Reinforcement Learning
-          </li>
-        </ul>
-        <ul class="list-disc">
-          <a
-            href="https://www.coursera.org/account/accomplishments/specialization/certificate/SD5PRKBRHY6Q"
-            class="font-semibold underline underline-offset-2"
-            >Deep Learning Specialization</a
-          >
-
-          <li class="ml-4 text-sm text-gray-700">
-            Neural Networks and Deep Learning
-          </li>
-          <li class="ml-4 text-sm text-gray-700">
-            Improving Deep Neural Networks: Hyperparameter Tuning,
-            Regularization and Optimization
-          </li>
-          <li class="ml-4 text-sm text-gray-700">
-            Structuring Machine Learning Projects
-          </li>
-          <li class="ml-4 text-sm text-gray-700">
-            Convolutional Neural Networks
-          </li>
-          <li class="ml-4 text-sm text-gray-700">Sequence Models</li>
-        </ul>
-
-        <ul>
-          <a
-            href="https://www.coursera.org/account/accomplishments/certificate/CZZAJXFNZZS4"
-            class="font-semibold underline underline-offset-2"
-          >
-            Introduction to TensorFlow for Artificial Intelligence, Machine
-            Learning, and Deep Learning
-          </a>
-        </ul>
-
-        <ul>
-          <a
-            href="https://www.coursera.org/account/accomplishments/verify/R3DTHFUMASG5"
-            class="font-semibold underline underline-offset-2"
-            >Convolutional Neural Networks in TensorFlow</a
-          >
-        </ul>
-
-        <ul>
-          <a
-            href="https://www.coursera.org/account/accomplishments/certificate/G5HFJ4W6LR8D"
-            class="font-semibold underline underline-offset-2"
-            >Natural Language Processing in TensorFlow</a
-          >
-        </ul>
-
-        <ul>
-          <a
-            href="https://www.coursera.org/account/accomplishments/certificate/LZHSKC5H8KJX"
-            class="font-semibold underline underline-offset-2"
-            >Natural Language Processing with Classification and Vector
-            Spaces</a
-          >
-        </ul>
-
-        <ul>
-          <a
-            href="https://www.coursera.org/account/accomplishments/verify/LML28R3QMMXZ"
-            class="font-semibold underline underline-offset-2"
-            >Aerial Image Segmentation with PyTorch</a
-          >
-        </ul>
-
-        <ul>
-          <a
-            href="https://www.coursera.org/account/accomplishments/verify/CE9E9AMP6FA5"
-            class="font-semibold underline underline-offset-2"
-            >Deep Learning with PyTorch : GradCAM</a
-          >
         </ul>
       </div>
     </section>
 
-    <footer class="bg-[#5e17eb] py-16">
-      <div
-        class="max-w-5xl mx-auto px-2 sm:px-8 grid grid-cols-1 sm:grid-cols-2 gap-4"
-      >
-        <div class="flex flex-col">
-          <p class="text-6xl text-white text-serif">
-            Reach out if you want to connect.
-          </p>
-
-          <hr class="border border-white my-8" />
-
-          <p class="uppercase tracking-wide text-white">Lets connect:</p>
-
-          <div class="flex items-center gap-4 flex-wrap my-4">
-            <a
-              href="https://www.researchgate.net/profile/Subek-Sharma"
-              title="ResearchGate"
-              ><div
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/researchgate.svg"
-                  alt="ResearchGate"
-                  class="w-5 h-5 aspect-square"
-                /></div
-            ></a>
-
-            <a
-              href="https://www.linkedin.com/in/subek-sharma/"
-              title="LinkedIn"
-            >
-              <div
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/linkedin.svg"
-                  alt="LinkedIn"
-                  class="w-5 h-5 aspect-square"
-                />
-              </div>
-            </a>
-
-            <a href="https://github.com/SubekSharma" title="GitHub">
-              <div
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/github.svg"
-                  alt="GitHub"
-                  class="w-5 h-5 aspect-square"
-                />
-              </div>
-            </a>
-
-            <a href="https://twitter.com/tsubek" title="Twitter">
-              <div
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/twitter.svg"
-                  alt="Twitter"
-                  class="w-5 h-5 aspect-square"
-                />
-              </div>
-            </a>
-
-            <a
-              href="https://www.instagram.com/subek_kashyap_adhikary/"
-              title="Instagram"
-            >
-              <div
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/instagram.svg"
-                  alt="Instagram"
-                  class="w-5 h-5 aspect-square"
-                />
-              </div>
-            </a>
-
-            <a href="https://blog.subeksharma.com.np/" title="Blog">
-              <div
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/blog.svg"
-                  alt="Blog"
-                  class="w-6 h-6 aspect-square"
-                />
-              </div>
-            </a>
-
-            <a href="https://subek-sharma.tiiny.site/" title="CV">
-              <p
-                class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-              >
-                <img
-                  src="assets/icons/cv.svg"
-                  alt="CV"
-                  class="w-6 h-6 aspect-square"
-                />
-              </p>
-            </a>
+    <section id="contact" class="bg-gray-100 py-24">
+      <div class="container max-w-5xl mx-auto px-2 sm:px-8">
+        <h1 class="text-indigo-600 text-3xl md:text-6xl text-center my-8 text-serif">Contact</h1>
+        <form action="https://formspree.io/YOUREMAIL" method="POST" class="w-full max-w-lg mx-auto bg-white p-8 rounded-lg shadow-lg">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700">Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required>
           </div>
-        </div>
-
-        <div class="my-2 md:ml-auto grid grid-cols-1 gap-4">
-          <div class="mr-2 mb-2 flex items-center gap-4">
-            <div
-              class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center border-2"
-            >
-              <img src="assets/icons/phone.svg" alt="Phone" class="w-8 h-8" />
-            </div>
-            <div class="">
-              <p class="text-white uppercase text-xs font-semibold">Phone</p>
-              <a href="tel:+9779845625240">
-                <p
-                  renderitem="phone"
-                  class="text-white text-serif text-lg font-[300]"
-                >
-                  <!-- rendered by script -->
-                </p>
-              </a>
-            </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email</label>
+            <input type="email" id="email" name="_replyto" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" required>
           </div>
-
-          <div class="mr-2 mb-2 flex items-center gap-4">
-            <div
-              class="w-12 h-12 aspect-square bg-white rounded-full flex items-center justify-center"
-            >
-              <img src="assets/icons/mail.svg" alt="Email" class="w-8 h-8" />
-            </div>
-            <div class="">
-              <p class="text-white uppercase text-xs font-semibold">Email</p>
-              <a href="mailto:subeksharma11@gmail.com">
-                <p
-                  renderitem="email"
-                  class="text-white text-serif text-lg font-[300]"
-                >
-                  <!-- rendered by script -->
-                </p>
-              </a>
-            </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700">Message</label>
+            <textarea id="message" name="message" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600" rows="5" required></textarea>
           </div>
-        </div>
+          <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded-lg">Send</button>
+        </form>
       </div>
+    </section>
+
+    <footer class="bg-indigo-600 text-white py-6 text-center">
+      <p>&copy; 2024 Subek Sharma. All rights reserved.</p>
     </footer>
 
-    <script src="assets/js/menu.js"></script>
-    <script src="assets/js/persona.js" type="module"></script>
-    <script src="assets/js/education.js" type="module"></script>
-    <script src="assets/js/projects.js" type="module"></script>
+    <!-- ... other body elements ... -->
   </body>
 </html>
