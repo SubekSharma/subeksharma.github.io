@@ -26,40 +26,48 @@
   </head>
 
   <body class="relative">
-
-
-
-
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subek Sharma's Website</title>
-  <link rel="stylesheet" href="path/to/your/css/styles.css">
-</head>
-<body>
-  <!-- Horizontal Navbar -->
-  <nav class="hidden sm:flex justify-between items-center py-4 px-6 bg-white shadow-md">
-    <div class="flex items-center">
-      <a href="#home" class="text-xl font-bold hover:text-gray-700">Home</a>
-      <a href="#about" class="ml-6 hover:text-gray-700">About</a>
-      <a href="#projects" class="ml-6 hover:text-gray-700">Projects</a>
-      <a href="#certifications" class="ml-6 hover:text-gray-700">Certifications</a>
-      <a href="#contact" class="ml-6 hover:text-gray-700">Contact</a>
-    </div>
-    <div class="flex items-center">
+    <nav class="fixed z-50 top-0 bg-[#f4f1e8] border-b-2 border-b-gray-300 w-full">
+  <!-- Horizontal Menu -->
+  <div id="horizontalMenu" class="py-4 px-4 flex justify-between items-center">
+    <div class="flex-grow flex justify-between items-center space-x-8">
       <img
         id="menuBtn"
         src="assets/icons/menu.svg"
         width="24px"
         height="24px"
-        class="hover:cursor-pointer"
-        alt="Menu"
+        class="sm:hidden hover:cursor-pointer"
       />
+      <ul class="hidden sm:flex space-x-8">
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#home" class="font-semibold">Home</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#about" class="font-semibold">About</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#education" class="font-semibold">Education</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#skills" class="font-semibold">Skills</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#research" class="font-semibold">Research</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#publications" class="font-semibold">Publications</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#projects" class="font-semibold">Projects</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#certifications" class="font-semibold">Certifications</a>
+        </li>
+        <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
+          <a href="#contact" class="font-semibold">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
 
   <!-- Vertical Menu for Mobile -->
   <div id="verticalMenu" class="hidden sm:hidden fixed top-0 right-0 left-0 h-full bg-white z-50">
@@ -69,51 +77,38 @@
       width="24px"
       height="24px"
       class="ml-auto hover:cursor-pointer mt-4 mr-2"
-      alt="Close Menu"
     />
     <ul class="flex flex-col gap-4 p-4">
-      <li><a href="#home" class="hover:text-gray-700">Home</a></li>
-      <li><a href="#about" class="hover:text-gray-700">About</a></li>
-      <li><a href="#projects" class="hover:text-gray-700">Projects</a></li>
-      <li><a href="#certifications" class="hover:text-gray-700">Certifications</a></li>
-      <li><a href="#contact" class="hover:text-gray-700">Contact</a></li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#home" class="font-semibold">Home</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#about" class="font-semibold">About</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#education" class="font-semibold">Education</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#skills" class="font-semibold">Skills</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#research" class="font-semibold">Research</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#publications" class="font-semibold">Publications</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#projects" class="font-semibold">Projects</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#certifications" class="font-semibold">Certifications</a>
+      </li>
+      <li class="border-b-2 text-gray-600 hover:text-[#5e17eb] hover:border-b-[#5e17eb] transition ease-in-out duration-300">
+        <a href="#contact" class="font-semibold">Contact</a>
+      </li>
     </ul>
   </div>
-
-  <!-- Main Content -->
-  <!-- Your content sections here -->
-  <section id="home">
-    <!-- Home section content -->
-  </section>
-  <section id="about">
-    <!-- About section content -->
-  </section>
-  <section id="projects">
-    <!-- Projects section content -->
-  </section>
-  <section id="certifications" class="py-16 bg-gray-100">
-    <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-6">Certifications</h2>
-      <ul class="list-disc ml-6">
-        <li>Certification Name - Issuing Organization (Year)</li>
-        <!-- Add more certifications as needed -->
-      </ul>
-    </div>
-  </section>
-  <section id="contact">
-    <!-- Contact section content -->
-  </section>
-
-  <script src="path/to/your/js/scripts.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
+</nav>
 
 
     <section
