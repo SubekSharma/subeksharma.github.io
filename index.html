@@ -30,16 +30,17 @@
 
 
     <nav class="fixed z-50 top-0 bg-[#f4f1e8] border-b-2 border-b-gray-300 w-full">
-  <div id="horizontalMenu" class="py-4 px-2 flex justify-between items-center">
-    <div class="flex items-center space-x-8 ml-auto">
+  <!-- Horizontal Menu -->
+  <div id="horizontalMenu" class="py-4 px-4 flex justify-between items-center">
+    <div class="flex-grow flex justify-between items-center space-x-8">
       <img
         id="menuBtn"
         src="assets/icons/menu.svg"
         width="24px"
         height="24px"
-        class="sm:hidden hover:cursor-pointer ml-auto"
+        class="sm:hidden hover:cursor-pointer"
       />
-      <ul class="hidden sm:flex space-x-8 ml-auto">
+      <ul class="hidden sm:flex space-x-8">
         <li class="border-b-4 border-b-transparent hover:border-b-[#5e17eb] hover:text-[#5e17eb] transition ease-in-out duration-300">
           <a href="#home" class="font-semibold">Home</a>
         </li>
@@ -68,10 +69,8 @@
     </div>
   </div>
 
-  <div
-    id="verticalMenu"
-    class="hidden sm:hidden fixed top-0 right-0 left-0 h-full bg-white z-50"
-  >
+  <!-- Vertical Menu for Mobile -->
+  <div id="verticalMenu" class="hidden sm:hidden fixed top-0 right-0 left-0 h-full bg-white z-50">
     <img
       id="closeMenuBtn"
       src="assets/icons/close-circle.svg"
@@ -107,6 +106,7 @@
     </ul>
   </div>
 </nav>
+
 
 
 
