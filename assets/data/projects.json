@@ -11,9 +11,9 @@
       "link": "https://subek-brain-tumor.hf.space/"
     },
     {
-      "title": "Face Landmarks Detection",
-      "imgSrc": "assets/images/face_landmarks_detection.png",
-      "link": "https://github.com/SubekSharma/Face_Landmarks_Detection"
+      "title": "Posture Detection YOLOv8",
+      "imgSrc": "assets/images/posture_detection.png",
+      "link": "https://github.com/SubekSharma/posture_detection_yolov8_transferlearning"
     },
     {
       "title": "Landmarks Recognition System",
